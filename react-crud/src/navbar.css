@@ -1,0 +1,45 @@
+/* NavBar.css */
+
+/* Ensure the navbar is fixed at the top and spans full width */
+nav {
+  position: fixed; /* Fixes the navbar to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: #333; /* Dark background for the navbar */
+  padding: 10px 20px; /* Padding around the navbar */
+  z-index: 1000; /* Ensures the navbar is above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for separation */
+}
+
+/* Basic reset for ul elements */
+ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Styling for list items */
+li {
+  margin: 0 15px; /* Space between navigation items */
+}
+
+/* Styling for links */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* White text color */
+  font-size: 18px; /* Font size for the links */
+  font-weight: 500; /* Slightly bolder text */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+a:hover {
+  color: #f0f0f0; /* Lighten color on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+a.active {
+  border-bottom: 2px solid #007bff; /* Blue underline for active link */
+}

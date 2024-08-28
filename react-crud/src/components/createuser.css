@@ -1,0 +1,129 @@
+/* CreateUser.css */
+
+/* Apply dark background and text color to the whole page with glassmorphism effect */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('background_image2.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensure background image covers the whole page */
+    color: #e0e0e0; /* Light text color for better readability */
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* Glassmorphism style for the container */
+.container {
+    max-width: 600px;
+    /*margin: 20px;*/
+    padding:0px 60px 0px 60px;
+    border-radius: 12px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px) brightness(90%); /* Frosted glass effect with adjusted brightness */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    color: #ffffff; /* Light text color for readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for container */
+.container:hover {
+    /*transform: scale(1.02); /* Slightly enlarge container on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Light header text color */
+    font-size: 26px; /* Larger font size for the header */
+    font-weight: 700; /* Bolder text */
+    letter-spacing: 1px; /* Spacing between letters */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 15px;
+    /*background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for table headers */
+    color: #ffffff; /* Light text color for headers */
+    font-weight: 700; /* Bolder text for headers */
+    /*border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Slightly thicker border for header */
+}
+
+td {
+    padding: 15px;
+    /*background-color: rgba(255, 255, 255, 0.1); /* Slightly more transparent for table cells */
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Light border for row separation */
+}
+
+/* Modern input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for input fields */
+    color: #ffffff; /* Light text color inside inputs */
+    font-size: 16px; /* Slightly larger font size for readability */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+input::placeholder {
+    color: #888; /* Light placeholder text color */
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border color on focus */
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly lighter background on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Modern button style */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* Button text color */
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder text */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Initial shadow for buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+/* Additional styling for links, if present */
+a {
+    color: #1e90ff; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Slightly bolder text */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+    color: #63a4ff; /* Lighter blue color on hover */
+}
